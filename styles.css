@@ -1,0 +1,62 @@
+body{
+    margin: 0; /*Remove default margin*/
+    font-family: sans-serif;
+    display: flex; /*Bring everything center horizontally*/
+    flex-direction: column; /*As all are next to each other, display col wise*/
+    align-items: center; /*Align everything center*/
+    height: 100vh; /*Set height to 100% of viewport heights*/
+    justify-content: center; /*Set content center vertically*/
+    /*Image from unsplash*/
+    background: url("https://images.unsplash.com/photo-1422493757035-1e5e03968f95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1108&q=80.unsplash.com/premium_photo-1671639169115-7cb03db6167a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80.png://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80://images.unsplash.com/photo-1628600185758-ca72b7f780cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+    background-size: cover; /*To see image nicely*/
+    overflow: hidden; /*To remove scroll bars*/
+} 
+
+h2{
+    text-transform: uppercase; /*All letters to uppercase*/
+    letter-spacing: 4px; /*Increase spacing b/w letters*/
+    font-size: 14px;  /*Decrease font size*/
+    text-align: center; /*When we change other sec,it should be at center*/
+    color: white;
+}
+
+.clock{
+    display: flex;
+}
+
+.clock div{
+    margin: 5px;
+    position: relative; /*relative to all components*/
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    background: slateblue;
+    opacity: 0.8;
+    color: white; /*Text color*/
+    display: flex; /*We can see effect of width and height*/
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    /*1.Pos of hori shadow, 2.Pos of ver shadow, 3.Blur radius, 4.Color with opacity*/
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: 0.8;
+}
+
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: green;
+}
