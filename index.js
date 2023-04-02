@@ -8,10 +8,8 @@ function updateClock(){
     let m = new Date().getMinutes();
     let s = new Date().getSeconds();
     let ampm = "AM";
-    if(h==12 && ampm=="AM"){
+    if(h==12){
         ampm = "PM";
-    }else if(h==12 && ampm=="PM"){
-        ampm = "AM";
     }
     if(h>12){
         h = h - 12;
